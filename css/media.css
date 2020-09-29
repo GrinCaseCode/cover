@@ -42,6 +42,11 @@
 .portfolio {
 	padding-bottom: 65px;
 }
+
+/*contacts*/
+.contacts .block-form {
+	padding: 24px 15px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -193,6 +198,20 @@
 	.btn_nav {
 		display: inline-block;
 	}
+
+	/*contacts*/
+	.contacts__item {
+		margin-bottom: 20px;
+	}
+	.header_page + div {
+		margin-top: 66px;
+	}
+	.contacts {
+		padding-top: 30px;
+	}
+	.map-wrap {
+    margin-top: -70px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -289,6 +308,26 @@
 	.slider-images__item img {
     box-shadow: 0 7px 14px rgba(35, 106, 130, 0.21);
 }
+
+/*contacts*/ 
+.contacts {
+	padding-bottom: 30px;
+	background-image: none;
+	    background-color: #ecf2f7;
+}
+.contacts .block-form {
+	padding: 24px 30px;
+}
+.map-wrap {
+	margin-top: 0;
+}
+#map {
+	height: 400px;
+}
+.contacts__item {
+    font-size: 14px;
+    line-height: 21px;
+    }
 }
 @media only screen and (max-width : 575px) {
 	.footer__bottom {
@@ -429,6 +468,22 @@
 }
 .slider-images .slick-next {
     right: 45px;
+}
+
+/*contacts*/
+.contacts__item {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 13px;
+}
+.title-form {
+    font-size: 20px;
+    }
+    .contacts .block-form {
+    padding: 24px 15px;
+}
+.contacts {
+	padding-top: 25px;
 }
 }
 

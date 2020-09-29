@@ -1269,3 +1269,109 @@ letter-spacing: 1.2px;
 	margin-top: 0 !important;
 }
 
+/*articles*/
+.articles {
+	padding-bottom: 40px;
+	background-color: #ecf2f7;
+}
+.articles + .footer {
+	margin-top: 0;
+}
+.item-article {
+	padding: 13px;
+	padding-bottom: 30px;
+	min-height: 100%;
+	display: block;
+	box-shadow: 0 15px 20px rgba(35, 106, 130, 0.21);
+border-radius: 6px;
+background-color: #ffffff;
+	color: #16273d;
+	transition: all 0.3s;
+}
+.item-article:hover {
+	box-shadow: 0 15px 20px rgba(35, 106, 130, 0.6);
+}
+.item-article__image {
+	height: 290px;
+	border-radius: 6px;
+	margin-bottom: 27px;
+	display: block;
+}
+.item-article__image img {
+	border-radius: 6px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-article__date {
+	color: #16273d;
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 20px;
+line-height: 21px;
+	display: block;
+}
+.item-article__title {
+	color: #16273d;
+font-size: 18px;
+font-weight: 900;
+line-height: 24px;
+text-transform: uppercase;
+	display: block;	
+}
+.row_articles > div {
+	margin-top: 30px;
+}
+.title-section_page {
+	padding-top: 20px;
+}
+.pagination {
+	padding: 18px 0;
+	margin-top: 52px;
+	background-color: #fff;
+}
+.pagination ul {
+	padding: 0 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+}
+.pagination li:not(.pagination__arrow) {
+	font-size: 18px;
+	color: #16273d;
+}
+.pagination li:not(.pagination__arrow) a {
+	font-weight: 500;
+	padding: 0 2px;
+	color: #16273d;
+	margin: 0 15px;
+font-size: 18px;
+line-height: 26px;
+transition: all 0.3s;
+}
+.pagination li:not(.pagination__arrow) a:hover,
+.pagination li.active a {
+	color: #004483;
+	border-color: #004483;
+}
+.pagination .pagination__arrow a {
+	 font-size: 22px;
+	color: #4a9eba;
+}
+.pagination__arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.pagination__arrow:first-of-type {
+	left: 30px;
+}
+.pagination__arrow:last-of-type {
+	right: 30px;
+}
+

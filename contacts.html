@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.3" />
-	<link rel="stylesheet" href="css/media.css?ver=1.3" />
+	<link rel="stylesheet" href="css/main.css?ver=1.15" />
+	<link rel="stylesheet" href="css/media.css?ver=1.15" />
 </head>
 <body>
 
@@ -29,8 +29,7 @@
 			<div class="container">
 				<div class="header__top">
 					<a href="#" class="logo">
-						<img src="img/logo.png" alt="alt">
-						<span>Крымский производитель резиновых напольных покрытий</span>
+						<img src="img/logo_new.svg" alt="alt">
 					</a>
 					<div class="item__contact">
 						<span>Производство и офис:</span>
@@ -44,6 +43,9 @@
 						<span>По всем вопросам </span>
 						<p><a href="mailto:tavridapark@mail.ru">tavridapark@mail.ru</a></p>
 					</div>
+					<a href="#" class="link-social">
+						<img src="img/ic_insta.svg" alt="alt">
+					</a>
 					<div class="item__contact">
 						<span>Отдел продаж </span>
 						<p class="header__phone"><a href="tel:+79788185556">+7 978 818 55 56</a></p>
@@ -75,35 +77,31 @@
 		<div class="contacts">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8">
-						<div class="row row_contacts">
-							<div class="col-7">
-								<div class="contacts__item">
-									<strong>Производство и офис: </strong>
-									<p>Симферополь, пер. Лавандовый, 2а</p>
-								</div>
-								<div class="contacts__item">
-									<strong>Режим работы:</strong>
-									<p>Пн-Сб с 9-00 до 18-00</p>
-								</div>
-								<div class="contacts__item">
-									<strong>По всем вопросам </strong>
-									<p><a href="mailto:tavridapark@mail.ru">tavridapark@mail.ru</a></p>
-								</div>
-								<div class="contacts__item">
-									<strong>Отдел продаж </strong>
-									<p><a href="tel:+79788185556">+7 978 818 55 56</a></p>
-								</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="block-contact">
+							<div class="block-contact__image">
+								<img src="img/contact_img.jpg" alt="alt">
 							</div>
-							<div class="col-5">
-								<div class="contacts__item">
-									<strong>Реквизиты: </strong>
-									<p>ООО «Название»</p>
-									<p>ИНН: 67564534</p>
-									<p>КПП: 6458790</p>
-									<p>ОГРН: 1234560987</p>
-								</div>
-							</div>
+							<p><strong>Александр Иванов</strong></p>
+							<p>Руководитель отдела продаж</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col_contacts">
+						<div class="contacts__item">
+							<strong>Производство и офис: </strong>
+							<p>Симферополь, пер. Лавандовый, 2а</p>
+						</div>
+						<div class="contacts__item">
+							<strong>Режим работы:</strong>
+							<p>Пн-Сб с 9-00 до 18-00</p>
+						</div>
+						<div class="contacts__item">
+							<strong>По всем вопросам </strong>
+							<p><a href="mailto:tavridapark@mail.ru">tavridapark@mail.ru</a></p>
+						</div>
+						<div class="contacts__item">
+							<strong>Отдел продаж </strong>
+							<p><a href="tel:+79788185556">+7 978 818 55 56</a></p>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -144,8 +142,11 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-12">
 						<a href="#" class="logo">
-							<img src="img/logo.png" alt="alt">
-							<span>Крымский производитель резиновых напольных покрытий</span>
+							<img src="img/logo_new2.svg" alt="alt">
+						</a>
+						<div class="descr-logo">Крымский производитель резиновых напольных покрытий</div>
+						<a href="#" class="link-insta-white">
+							<img src="img/ic_insta2.svg" alt="alt">
 						</a>
 					</div>
 					<div class="col-lg-5 col-md-5 col-6">
@@ -216,24 +217,24 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.3"></script>
+<script src="js/common.js?ver=1.15"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script>
-		$(document).ready(function() {
-			ymaps.ready(init);
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
 
-			function init() {
-				var myMap = new ymaps.Map('map', {
-					center: [44.991013, 34.088146],
-					zoom: 15
-				}, {
-					searchControlProvider: 'yandex#search'
-				}),
+		function init() {
+			var myMap = new ymaps.Map('map', {
+				center: [44.991013, 34.088146],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
 
 
-				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-					balloonContent: '<p>Симферополь, пер. Лавандовый, 2а</p>'
-				}, {
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p>Симферополь, пер. Лавандовый, 2а</p>'
+			}, {
             // Опции.
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
@@ -241,22 +242,22 @@
             iconImageHref: 'img/pin1.svg',
             iconImageSize: [29, 38],
         });
-				myMap.controls.remove('searchControl');
-				myMap.behaviors.disable('scrollZoom');
-				myMap.geoObjects.add(myPlacemark);
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
 
-				myPlacemark.events
-				.add('mouseenter', function (e) {
+			myPlacemark.events
+			.add('mouseenter', function (e) {
             // Ссылку на объект, вызвавший событие,
             // можно получить из поля 'target'.
             e.get('target').options.set('iconImageHref', 'img/pin2.svg'); 
         })
-				.add('mouseleave', function (e) {
-					e.get('target').options.set('iconImageHref', 'img/pin1.svg'); 
-				});
-			}
-		});
-	</script>
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin1.svg'); 
+			});
+		}
+	});
+</script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

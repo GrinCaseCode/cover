@@ -1454,3 +1454,72 @@ blockquote {
 	color: #16273d;
 	background-color: #ecf2f7;
 }
+
+/*new*/
+.logo img {
+	margin-right: 0px;
+	width: 228px;
+	max-width: inherit;
+}
+.link-social {
+	display: inline-block;
+}
+.link-social img {
+	width: 28px;
+	height: auto;
+}
+.descr-logo {
+	margin-top: 15px;
+	margin-bottom: 23px;
+	color: #ffffff; 	
+font-size: 14px;
+max-width: 240px;
+}
+.link-insta-white {
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.link-insta-white img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.block-contact {
+	padding: 12px;
+	max-width: 305px;
+	color: #16273d;
+	line-height: 24px;
+font-size: 16px;
+	box-shadow: 0 15px 20px rgba(35, 106, 130, 0.21);
+border-radius: 6px;
+background-color: #ffffff;
+}
+.block-contact__image {
+	height: 262px;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.block-contact__image img {
+	border-radius: 6px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.block-contact p  {
+	padding: 0 18px;
+}
+.block-contact p strong {
+	font-weight: 500;
+}
+.col_contacts {
+	padding-top: 8px;
+}

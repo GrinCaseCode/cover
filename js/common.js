@@ -20,6 +20,22 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".navigat li a").mPageScroll2id();
 
 
+/*open filter*/
+$(".btn-main_filter").click(function(e) {
+	e.preventDefault();
+		if ($(".sidebar-catalog").is(":hidden")) {
+			$(".sidebar-catalog").slideDown(200);
+		} else {
+			$(".sidebar-catalog").slideUp(200);
+		}
+	});
+
+/*colors*/
+$(".colors-list__item").click(function() {
+	$(".colors-list__item").removeClass("active")
+		$(this).addClass("active");
+	});
+
 	// Кнопка sandwich 
 
 	$(".btn_nav").click(function() {
@@ -125,6 +141,27 @@ rev.slick({
   /*infinite: false,*/
 });
 
+$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		asNavFor: '.slider-nav',
+		slidesToScroll: 1,
+
+	});
+
+
+	$('.slider-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		arrows: false,
+		dots: false,
+		focusOnSelect: true,
+	
+	});
+
 	$('.tabs li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
@@ -132,6 +169,15 @@ rev.slick({
 		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").hide();
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn();
+	});
+
+	$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").hide();
+		var selectTab2 = $(this).attr("href");
+		$(selectTab2).fadeIn();
 	});
 
 

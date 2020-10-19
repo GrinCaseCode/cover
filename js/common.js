@@ -63,12 +63,20 @@ $(".colors-list__item").click(function() {
 
 	//слайдер
 
-	$('.slider').slick({
+	$('.slider-sertificats').slick({
+		arrows: true,
+		dots: true,
 		infinite: true,
-		slidesToShow: 5,
-		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-long-arrow-left"></i><div/>',
+		slidesToShow: 3,
+  prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-long-arrow-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-long-arrow-right"></i><div/>',
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		}]
 	});
 
 	/*
